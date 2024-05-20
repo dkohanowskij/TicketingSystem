@@ -1,0 +1,14 @@
+C:\Mentoring\TicketingSln\Ticketing.Persistence\bin\Debug\net8.0\Ticketing.Persistence.deps.json
+C:\Mentoring\TicketingSln\Ticketing.Persistence\bin\Debug\net8.0\Ticketing.Persistence.runtimeconfig.json
+C:\Mentoring\TicketingSln\Ticketing.Persistence\bin\Debug\net8.0\Ticketing.Persistence.dll
+C:\Mentoring\TicketingSln\Ticketing.Persistence\bin\Debug\net8.0\Ticketing.Persistence.pdb
+C:\Mentoring\TicketingSln\Ticketing.Persistence\obj\Debug\net8.0\Ticketing.Persistence.csproj.AssemblyReference.cache
+C:\Mentoring\TicketingSln\Ticketing.Persistence\obj\Debug\net8.0\Ticketing.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mentoring\TicketingSln\Ticketing.Persistence\obj\Debug\net8.0\Ticketing.Persistence.AssemblyInfoInputs.cache
+C:\Mentoring\TicketingSln\Ticketing.Persistence\obj\Debug\net8.0\Ticketing.Persistence.AssemblyInfo.cs
+C:\Mentoring\TicketingSln\Ticketing.Persistence\obj\Debug\net8.0\Ticketing.Persistence.csproj.CoreCompileInputs.cache
+C:\Mentoring\TicketingSln\Ticketing.Persistence\obj\Debug\net8.0\Ticketing.Persistence.dll
+C:\Mentoring\TicketingSln\Ticketing.Persistence\obj\Debug\net8.0\refint\Ticketing.Persistence.dll
+C:\Mentoring\TicketingSln\Ticketing.Persistence\obj\Debug\net8.0\Ticketing.Persistence.pdb
+C:\Mentoring\TicketingSln\Ticketing.Persistence\obj\Debug\net8.0\Ticketing.Persistence.genruntimeconfig.cache
+C:\Mentoring\TicketingSln\Ticketing.Persistence\obj\Debug\net8.0\ref\Ticketing.Persistence.dll
