@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Ticketing.Application/1.0.0": {
+        "dependencies": {
+          "Ticketing.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Ticketing.Application.dll": {}
+        }
+      },
+      "Ticketing.Domain/1.0.0": {
+        "runtime": {
+          "Ticketing.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ticketing.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ticketing.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

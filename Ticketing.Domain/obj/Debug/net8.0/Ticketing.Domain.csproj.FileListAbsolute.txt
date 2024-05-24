@@ -1,0 +1,12 @@
+C:\Mentoring\TicketingSln\Ticketing.Domain\bin\Debug\net8.0\Ticketing.Domain.deps.json
+C:\Mentoring\TicketingSln\Ticketing.Domain\bin\Debug\net8.0\Ticketing.Domain.dll
+C:\Mentoring\TicketingSln\Ticketing.Domain\bin\Debug\net8.0\Ticketing.Domain.pdb
+C:\Mentoring\TicketingSln\Ticketing.Domain\obj\Debug\net8.0\Ticketing.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mentoring\TicketingSln\Ticketing.Domain\obj\Debug\net8.0\Ticketing.Domain.AssemblyInfoInputs.cache
+C:\Mentoring\TicketingSln\Ticketing.Domain\obj\Debug\net8.0\Ticketing.Domain.AssemblyInfo.cs
+C:\Mentoring\TicketingSln\Ticketing.Domain\obj\Debug\net8.0\Ticketing.Domain.csproj.CoreCompileInputs.cache
+C:\Mentoring\TicketingSln\Ticketing.Domain\obj\Debug\net8.0\Ticketing.Domain.sourcelink.json
+C:\Mentoring\TicketingSln\Ticketing.Domain\obj\Debug\net8.0\Ticketing.Domain.dll
+C:\Mentoring\TicketingSln\Ticketing.Domain\obj\Debug\net8.0\refint\Ticketing.Domain.dll
+C:\Mentoring\TicketingSln\Ticketing.Domain\obj\Debug\net8.0\Ticketing.Domain.pdb
+C:\Mentoring\TicketingSln\Ticketing.Domain\obj\Debug\net8.0\ref\Ticketing.Domain.dll

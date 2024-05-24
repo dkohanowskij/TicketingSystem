@@ -1537,6 +1537,29 @@
             "rid": "win"
           }
         }
+      },
+      "Ticketing.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Ticketing.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ticketing.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ticketing.Application.dll": {}
+        }
+      },
+      "Ticketing.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Ticketing.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ticketing.Domain.dll": {}
+        }
       }
     }
   },
@@ -4169,6 +4192,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Ticketing.Application/1.0.0": {
+      "type": "project",
+      "path": "../Ticketing.Application/Ticketing.Application.csproj",
+      "msbuildProject": "../Ticketing.Application/Ticketing.Application.csproj"
+    },
+    "Ticketing.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Ticketing.Domain/Ticketing.Domain.csproj",
+      "msbuildProject": "../Ticketing.Domain/Ticketing.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4176,7 +4209,9 @@
       "Microsoft.EntityFrameworkCore >= 8.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.5",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.4"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.4",
+      "Ticketing.Application >= 1.0.0",
+      "Ticketing.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4205,7 +4240,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Mentoring\\TicketingSln\\Ticketing.Application\\Ticketing.Application.csproj": {
+              "projectPath": "C:\\Mentoring\\TicketingSln\\Ticketing.Application\\Ticketing.Application.csproj"
+            },
+            "C:\\Mentoring\\TicketingSln\\Ticketing.Domain\\Ticketing.Domain.csproj": {
+              "projectPath": "C:\\Mentoring\\TicketingSln\\Ticketing.Domain\\Ticketing.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
