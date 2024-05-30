@@ -9,10 +9,15 @@ namespace Ticketing.Application.Abstractions.Repositories
 {
     public interface IUnitOfWork: IDisposable
     {
-        //TRepository GetRepository<TRepository>();
-
-        IOrderRepository OrderRepository { get; }
-
+        //Start the database Transaction
+        void CreateTransaction();
+        //Commit the database Transaction
+        void Commit();
+        //Rollback the database Transaction
+        void Rollback();
+        //DbContext Class SaveChanges method
         Task Save(CancellationToken cancellationToken);
+        //Get repository by type
+        TRepository GetRepository<TRepository>();
     }
 }
