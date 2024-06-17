@@ -4,6 +4,7 @@ namespace Ticketing.Application.Abstractions.Repositories
 {
     public interface IOrderRepository: IGenericRepository<Order>
     {
-        Task<Order> GetOrderWithDetails(int id);
+        Task<Order> GetOrderWithDetailsAsync(int id);
+        Task<int?> GetOrderStatusAsync(int id);
     }
 }

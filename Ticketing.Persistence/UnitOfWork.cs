@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.DependencyInjection;
+using System.Linq.Expressions;
 using Ticketing.Application.Abstractions.Repositories;
 using Ticketing.Persistence.Context;
 
@@ -11,15 +12,25 @@ namespace Ticketing.Persistence
 
         private bool _disposed;
 
-        public async Task Save(CancellationToken cancellationToken)
+        public void Save()
         {
-            await context.SaveChangesAsync(cancellationToken);
+            context.SaveChanges();
         }
 
         public async Task SaveAsync(CancellationToken cancellationToken)
         {
-            await context.SaveChangesAsync(cancellationToken);
+            try
+            {
+                CreateTransaction();
+                await context.SaveChangesAsync(cancellationToken);
+                Commit();
+            }
+            catch (Exception)
+            {
+                Rollback();
+            }
         }
+            
 
         public void CreateTransaction()
         {

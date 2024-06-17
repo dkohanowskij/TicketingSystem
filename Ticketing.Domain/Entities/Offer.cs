@@ -18,6 +18,8 @@ public partial class Offer: AuditableEntity
 
     public double? Price { get; set; }
 
+    public int Status { get; set; }
+
     public virtual Event Event { get; set; } = null!;
 
     public virtual ICollection<Ticket> Tickets { get; set; } = new List<Ticket>();
