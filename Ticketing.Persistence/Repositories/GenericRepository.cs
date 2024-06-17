@@ -24,9 +24,9 @@ namespace Ticketing.Persistence.Repositories
             return entity;
         }
 
-        public async Task Delete(T entity)
+        public void Delete(T entity)
         {
-            _dbContext.Set<T>().Remove(entity);
+           _dbContext.Set<T>().Remove(entity);
         }
 
         public async Task<bool> Exists(int id)
@@ -40,12 +40,12 @@ namespace Ticketing.Persistence.Repositories
             return await _dbContext.Set<T>().FindAsync(id);
         }
 
-        public async Task<IReadOnlyList<T>> GetAll()
+        public async Task<IEnumerable<T>> GetAll()
         {
             return await _dbContext.Set<T>().ToListAsync();
         }
 
-        public async Task Update(T entity)
+        public void Update(T entity)
         {
             _dbContext.Entry(entity).State = EntityState.Modified;
         }

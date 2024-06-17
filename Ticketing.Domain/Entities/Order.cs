@@ -4,7 +4,7 @@ using Ticketing.Domain.Common;
 
 namespace Ticketing.Domain.Entities;
 
-public partial class Order: AuditableEntity
+public partial class Order : AuditableEntity
 {
     public int? TicketId { get; set; }
 
@@ -14,5 +14,17 @@ public partial class Order: AuditableEntity
 
     public virtual Ticket? Ticket { get; set; }
 
+    public virtual ICollection<Ticket> Tickets { get; set; } = new List<Ticket>();
+
     public virtual User? User { get; set; }
+
+    public static Order CreateOrder(int? ticketId, int? userId, int? status)
+    {
+        Order order = new Order();
+        order.TicketId = ticketId;
+        order.UserId = userId;
+        order.Status = status;
+
+        return order;
+    }
 }

@@ -16,20 +16,20 @@ namespace Ticketing.Persistence.Configuration.Entities
             builder.HasKey(e => e.Id).HasName("Offers_pkey");
 
             builder.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("ID");
+                .ValueGeneratedNever()
+                .HasColumnName("ID");
             builder.Property(e => e.EventId).HasColumnName("EventID");
             builder.Property(e => e.VenueId).HasColumnName("VenueID");
 
             builder.HasOne(d => d.Event).WithMany(p => p.Offers)
-                    .HasForeignKey(d => d.EventId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_eventId");
+                .HasForeignKey(d => d.EventId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("fk_eventId");
 
             builder.HasOne(d => d.Venue).WithMany(p => p.Offers)
-                    .HasForeignKey(d => d.VenueId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_venueId");
+                .HasForeignKey(d => d.VenueId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("fk_venueId");
         }
     }
 }

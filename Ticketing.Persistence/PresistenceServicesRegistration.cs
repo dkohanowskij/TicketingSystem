@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Caching.StackExchangeRedis;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -22,6 +24,16 @@ namespace Ticketing.Persistence
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            services.AddStackExchangeRedisCache(redisOptions =>
+            {
+                string? connection = configuration?.GetConnectionString("CacheSettings:RedisCache");
+
+                redisOptions.Configuration = connection;
+            });
+
+            // Dist cache registration
+            services.Add(ServiceDescriptor.Singleton<ICartRepository, CartRepository>());
 
             services.AddScoped<IEventRepository, EventRepository>();
             services.AddScoped<IOfferRepository, OfferRepository>();

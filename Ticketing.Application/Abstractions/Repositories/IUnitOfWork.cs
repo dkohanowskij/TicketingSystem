@@ -16,7 +16,7 @@ namespace Ticketing.Application.Abstractions.Repositories
         //Rollback the database Transaction
         void Rollback();
         //DbContext Class SaveChanges method
-        Task Save(CancellationToken cancellationToken);
+        Task SaveAsync(CancellationToken cancellationToken);
         //Get repository by type
         TRepository GetRepository<TRepository>();
     }

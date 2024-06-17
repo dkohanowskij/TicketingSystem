@@ -14,6 +14,10 @@ namespace Ticketing.Persistence.Repositories
             _dbContext = dbContext;
         }
 
-        public async Task<Order> GetOrderWithDetails(int id) => await _dbContext.Orders.FirstOrDefaultAsync(q => q.Id == id);
+        public async Task<Order> GetOrderWithDetailsAsync(int id) => await _dbContext.Orders.FirstOrDefaultAsync(q => q.Id == id);
+        public async Task<int?> GetOrderStatusAsync(int id) {
+          var orderStatus = await _dbContext.Orders.FirstOrDefaultAsync(q => q.Id == id);
+          return orderStatus == null ? 0 : orderStatus.Status;
+        }
     }
 }
